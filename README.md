@@ -2,9 +2,9 @@
 
 [Geany](http://geany.org) is a text editor using the GTK2 toolkit with basic
 features of an integrated development environment. This is a
-[Base16](https://github.com/chriskempson/base16) color scheme for it, built using the [Base16 Builder](https://github.com/chriskempson/base16-builder).
+[Tinted](https://github.com/tinted-theming/home) Base16 scheme for it, built using the [Tinted Builder Rust](https://github.com/tinted-theming/tinted-builder-rust).
 
-![Base16 Default Dark](https://raw.github.com/robloach/base16-geany/master/base16-default.dark.png)
+![Base16 Default Dark](screenshot.png)
 
 
 ## Installation
@@ -16,23 +16,20 @@ features of an integrated development environment. This is a
 ## Building
 
 1. Download the Geany scheme
-  ```
-  git clone https://github.com/RobLoach/base16-geany.git
-  cd base16-geany
-  ```
-
-2. Update it accordingly
-  ```
-  make
+  ```bash
+  git clone https://github.com/RobLoach/tinted-geany.git
+  cd tinted-geany
   ```
 
-## Contributing
+2. Install [tinted-builder-rust](https://github.com/tinted-theming/tinted-builder-rust)
 
-Pull requests can be made against [Base16 Builder](http://github.com/chriskempson/base16-builder).
-Feel free to communicate in the [Base16 for Geany issue queue](https://github.com/RobLoach/base16-geany/issues)
-about any new additions.
+3. Run it...
+  ```bash
+  tinted-builder-rust sync
+  tinted-builder-rust build .
+  ```
 
 
 ## License
 
-Base16 for Geany is licensed under the [MIT License](https://github.com/robloach/base16-geany/blob/master/LICENSE.md)
+[MIT License](https://github.com/robloach/base16-geany/blob/master/LICENSE.md)

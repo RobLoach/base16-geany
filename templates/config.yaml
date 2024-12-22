@@ -1,0 +1,3 @@
+base16:
+  filename: colorschemes/{{ scheme-system }}-{{ scheme-slug }}.conf
+  supported-systems: [base16]
